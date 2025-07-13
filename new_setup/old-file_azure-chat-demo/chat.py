@@ -30,7 +30,7 @@ class TravelWeather:
 
 async def main():
     # Load the .env file. Replace the path with the path to your .env file.
-    load_dotenv('/Users/alfredo/.secrets/azure-open-ai.sh')
+    load_dotenv('E:\AI\Git\GitHub\Duke2.1_azure-chat-demo\Duke2.1_azure-chat-demo\.env')
     AZURE_OPEN_AI__CHAT_COMPLETION_DEPLOYMENT_NAME = os.environ["AZURE_OPEN_AI__CHAT_COMPLETION_DEPLOYMENT_NAME"]
     AZURE_OPEN_AI__ENDPOINT = os.environ["AZURE_OPEN_AI__ENDPOINT"]
     AZURE_OPEN_AI__API_KEY = os.environ["AZURE_OPEN_AI__API_KEY"]
@@ -42,7 +42,7 @@ async def main():
             AZURE_OPEN_AI__CHAT_COMPLETION_DEPLOYMENT_NAME,
             AZURE_OPEN_AI__ENDPOINT,
             AZURE_OPEN_AI__API_KEY,
-            api_version = "2023-07-01-preview"
+            api_version = "2024-12-01-preview"
         ),
     )
 
